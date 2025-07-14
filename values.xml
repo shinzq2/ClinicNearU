@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">904968715795</string>
+    <string name="google_api_key" translatable="false">API_KEYS</string>
+    <string name="google_app_id" translatable="false">1:904968715795:android:9ea5cd793dc7cc709bc9e6</string>
+    <string name="google_crash_reporting_api_key" translatable="false">API_KEYS</string>
+    <string name="google_storage_bucket" translatable="false">groupproject1-9928e.firebasestorage.app</string>
+    <string name="project_id" translatable="false">groupproject1-9928e</string>
+</resources>
