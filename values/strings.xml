@@ -1,11 +1,5 @@
 <resources>
     <string name="app_name">ClinicNearU</string>
-    <string-array name="freq_options">
-        <item>Once a day</item>
-        <item>Twice a day</item>
-        <item>3 times a day</item>
-    </string-array>
-
     <string-array name="gender_options">
         <item>Male</item>
         <item>Female</item>
