@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#555879"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:descendantFocusability="beforeDescendants">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/clinic_flogo"
+        android:layout_marginTop="8dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Medicine Allergy"
+        android:textColor="#F4EBD3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Form ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:id="@+id/formContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp">
+
+            <EditText
+                android:id="@+id/editMedicineName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicine Name"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editReaction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Reaction"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date Noted"
+                android:focusable="false"
+                android:clickable="true"
+                android:layout_marginTop="12dp"
+                android:textColor="#000000"
+                android:textColorHint="#FFFFFF"
+                android:backgroundTint="#FFFFFF" />
+
+            <!-- Image Preview -->
+            <ImageView
+                android:id="@+id/imgPreview"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_medicine_placeholder"
+                android:contentDescription="Image preview" />
+
+            <Button
+                android:id="@+id/btnUploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#555879"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button" />
+
+            <!-- Save Button -->
+            <Button
+                android:id="@+id/btnSaveAllergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save Allergy"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#555879"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rounded_button"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

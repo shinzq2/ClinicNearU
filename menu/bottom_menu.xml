@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_visit"
+        android:icon="@drawable/ic_visit"
+        android:title="Visit" />
+
+    <item
+        android:id="@+id/nav_allergy"
+        android:icon="@drawable/ic_medicine"
+        android:title="Allergy" />
+
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/ic_search"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_setting"
+        android:title="Profile" />
+
+</menu>

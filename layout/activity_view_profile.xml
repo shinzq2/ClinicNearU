@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555879">
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <!-- Logo -->
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/clinic_flogo"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Profile Info -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="My Profile"
+                android:textColor="#F4EBD3"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Full Name -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_name" style="@style/ProfileIcon" />
+
+                    <TextView
+                        android:id="@+id/txt_name" style="@style/ProfileLabel"
+                        android:backgroundTint="#000000"
+                        android:text="Full Name: -"
+                        android:textColorHint="#000000" />
+                </LinearLayout>
+
+                <!-- Email -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_email" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_email" style="@style/ProfileLabel"
+                        android:text="Email: -" />
+                </LinearLayout>
+
+                <!-- Gender -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_gender" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_gender" style="@style/ProfileLabel"
+                        android:text="Gender: -" />
+                </LinearLayout>
+
+                <!-- Phone -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_phone" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_phone" style="@style/ProfileLabel"
+                        android:text="Phone: -" />
+                </LinearLayout>
+
+                <!-- IC -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_iccard" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_ic" style="@style/ProfileLabel"
+                        android:text="IC: -" />
+                </LinearLayout>
+
+                <!-- Age -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_age" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_age" style="@style/ProfileLabel"
+                        android:text="Age: -" />
+                </LinearLayout>
+
+                <!-- Blood Type -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_blood" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_blood" style="@style/ProfileLabel"
+                        android:text="Blood Type: -" />
+                </LinearLayout>
+
+                <!-- Home Address -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_home" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_address" style="@style/ProfileLabel"
+                        android:text="Home Address: -" />
+                </LinearLayout>
+
+                <!-- Emergency Contact Name -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_person" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_emergency_name" style="@style/ProfileLabel"
+                        android:text="Emergency Contact Name: -" />
+                </LinearLayout>
+
+                <!-- Emergency Phone -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_phone" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_emergency_phone" style="@style/ProfileLabel"
+                        android:text="Emergency Phone: -" />
+                </LinearLayout>
+
+                <!-- Relationship -->
+                <LinearLayout style="@style/ProfileRow">
+                    <ImageView
+                        android:src="@drawable/ic_relationship" style="@style/ProfileIcon" />
+                    <TextView
+                        android:id="@+id/txt_emergency_relationship" style="@style/ProfileLabel"
+                        android:text="Relationship: -" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="24dp">
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:backgroundTint="#98A1BC"
+                    android:text="Edit Profile"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/btn_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DED3C4"
+                    android:text="Logout"
+                    android:textColor="#000000" />
+
+                <ImageButton
+                    android:id="@+id/btnEmergencyCall"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/ic_ec"
+                    android:background="@drawable/rounded_emergency"
+                    android:layout_below="@+id/btnLogout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="Emergency Call" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- BottomNavigationView at the bottom -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled" />
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#555879">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/clinic_flogo"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="Medicine Allergy"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#F4EBD3"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ListView
+        android:id="@+id/listViewAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/imageView"
+        android:layout_above="@id/btnAddAllergy"
+        android:divider="#98A1BC"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnAddAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Allergy"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_margin="16dp"
+        android:backgroundTint="#98A1BC"
+        android:textColor="#FFFFFF" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_menu"
+        app:labelVisibilityMode="labeled" />
+
+</RelativeLayout>
